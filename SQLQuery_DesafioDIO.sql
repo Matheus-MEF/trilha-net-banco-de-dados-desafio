@@ -42,12 +42,8 @@ SELECT F.Nome, g.Genero
 	FROM Filmes F
 	INNER JOIN FilmesGenero fg ON f.Id = fg.IdFilme
 	INNER JOIN Generos g
-	ON fg.IdGenero = g.Id WHERE g.Genero = 'Mistério'
+	ON fg.IdGenero = g.Id WHERE g.Genero = 'MistÃ©rio'
 -- 12
-SELECT * FROM Filmes
-SELECT * FROM Atores
-SELECT * FROM ElencoFilme
-
 SELECT f.Nome,a.PrimeiroNome, a.UltimoNome, ef.Papel  
 FROM Atores a
 INNER JOIN ElencoFilme ef ON a.Id = ef.IdAtor
